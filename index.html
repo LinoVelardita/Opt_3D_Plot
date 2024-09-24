@@ -32,7 +32,19 @@
         .links a:hover {
             text-decoration: underline;
         }
+        .function {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #333;
+        }
     </style>
+
+    <!-- Include MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
 </head>
 <body>
 
@@ -41,10 +53,18 @@
 
     <div class="links">
         <a href="quadratic.html">Quadratic</a>
+        <p class="function">Quadratic Function: \( \frac{1}{2} \mathbf{x}^T \mathbf{Q} \mathbf{x} \)</p>
+        <p class="function">
+            \( \mathbf{Q} = \begin{bmatrix} 
+                3.0 & 1.0 & 2.0 \\ 
+                1.0 & 4.0 & 0.5 \\ 
+                2.0 & 0.5 & 5.0 
+            \end{bmatrix} \)
+        </p>
+
         <a href="himmelblau.html">Himmelblau</a>
         <a href="ackley.html">Ackley</a>
     </div>
 
 </body>
 </html>
-
